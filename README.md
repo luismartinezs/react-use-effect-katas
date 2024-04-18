@@ -2,12 +2,13 @@
 
 ## Dev tasks
 
-- [ ] clean up template boilerplate
+- [x] clean up template boilerplate
 - [ ] install deps
   - [ ] vitest
   - [ ] tailwind
-  - [ ] react-router
-- [ ] setup layout
-- [ ] setup routing
+  - [x] react-router
+- [x] setup layout
+- [x] setup routing
 - [ ] config tailwind
-- [ ] setup plop for generating routes
+- [x] setup plop for generating routes
+- [ ] start adding katas
