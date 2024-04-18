@@ -4,7 +4,7 @@
 
 - [x] clean up template boilerplate
 - [ ] install deps
-  - [ ] vitest
+  - [x] vitest
   - [ ] tailwind
   - [x] react-router
 - [x] setup layout

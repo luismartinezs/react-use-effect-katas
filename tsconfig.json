@@ -23,7 +23,8 @@
     "paths": {
       "@/*": ["./src/*"]
     },
+    "types": ["@testing-library/react", "react/next", "react-dom/next"]
   },
-  "include": ["src"],
+  "include": ["src", "tests"],
   "references": [{ "path": "./tsconfig.node.json" }]
 }
