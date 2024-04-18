@@ -5,7 +5,7 @@ import { Outlet } from 'react-router-dom'
 const routes = [
   {
     path: '/',
-    label: 'App',
+    label: 'Home',
   },
   // new component link here
 ]
@@ -16,7 +16,7 @@ export default function Root() {
     <>
       <SkipToContent mainContentRef={mainContentRef} />
       <header>
-        <h1 className="text-lg font-bold">React playground</h1>
+        <h1 className="text-lg font-bold">React useEffect Katas 🥷🏻</h1>
         <nav className="pb-2 mb-2 border-b border-sky-500">
           <ul className="flex flex-wrap w-full space-x-2">
             {routes.map((route, idx) => (
