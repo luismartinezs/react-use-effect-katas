@@ -5,9 +5,10 @@ import {
   createBrowserRouter,
   RouterProvider,
 } from "react-router-dom";
-import App from './App'
-import ErrorPage from './error-page'
-import Root from './routes/root'
+import App from '@/App'
+import ErrorPage from '@/error-page'
+import Root from '@/routes/root'
+import SubscribeUnsubscribe from '@/katas/SubscribeUnsubscribe'
 // new component import here
 
 const router = createBrowserRouter([
@@ -21,6 +22,10 @@ const router = createBrowserRouter([
         element: <App />,
       },
       // new component route here
+      {
+        path: '/sub-unsub',
+        element: <SubscribeUnsubscribe />,
+      },
     ]
   }
 ])

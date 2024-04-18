@@ -7,6 +7,10 @@ const routes = [
     path: '/',
     label: 'Home',
   },
+  {
+    path: '/sub-unsub',
+    label: 'Subscribe Unsubscribe',
+  },
   // new component link here
 ]
 
