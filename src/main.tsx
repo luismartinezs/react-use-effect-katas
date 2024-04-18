@@ -10,6 +10,7 @@ import ErrorPage from '@/error-page'
 import Root from '@/routes/root'
 import SubscribeUnsubscribe from '@/katas/SubscribeUnsubscribe'
 // new component import here
+import WebSocketChatClient from './katas/WebSocketChatClient';
 
 const router = createBrowserRouter([
   {
@@ -22,6 +23,7 @@ const router = createBrowserRouter([
         element: <App />,
       },
       // new component route here
+      { path: 'web-socket-chat-client', element: <WebSocketChatClient /> },
       {
         path: '/sub-unsub',
         element: <SubscribeUnsubscribe />,

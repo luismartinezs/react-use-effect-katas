@@ -12,6 +12,7 @@ const routes = [
     label: 'Subscribe Unsubscribe',
   },
   // new component link here
+  { path: 'web-socket-chat-client', label: 'Web socket chat client' },
 ]
 
 export default function Root() {
@@ -20,7 +21,7 @@ export default function Root() {
     <>
       <SkipToContent mainContentRef={mainContentRef} />
       <header>
-        <h1 className="text-lg font-bold">React useEffect Katas 🥷🏻</h1>
+        <h2 className="text-lg font-bold">React useEffect Katas 🥷🏻</h2>
         <nav className="pb-2 mb-2 border-b border-sky-500">
           <ul className="flex flex-wrap w-full space-x-2">
             {routes.map((route, idx) => (
