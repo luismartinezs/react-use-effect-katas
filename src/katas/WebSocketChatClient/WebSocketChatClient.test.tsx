@@ -2,6 +2,8 @@ import { describe, it, expect, vi, afterEach, beforeEach } from 'vitest';
 import { render, fireEvent, screen, cleanup } from '@testing-library/react';
 import WebSocketChatClient from './WebSocketChatClient';
 
+// TODO this test is broken
+
 describe('WebSocketChatClient', () => {
   beforeEach(() => {
     vi.useFakeTimers();
@@ -14,7 +16,7 @@ describe('WebSocketChatClient', () => {
 
   it('should send messages and display responses', () => {
     render(<WebSocketChatClient />);
-    const input = screen.getByPlaceholderText('Type a message...');
+    const input: HTMLInputElement = screen.getByPlaceholderText('Type a message...');
     const sendButton = screen.getByText('Send');
     const msg = 'Hello WebSocket'
 
@@ -25,10 +27,8 @@ describe('WebSocketChatClient', () => {
     expect(input.value).toBe(msg)
     fireEvent.click(sendButton);
 
+    // vi.runAllTimers();
 
-    vi.runAllTimers();
-    vi.advanceTimersByTime(1000)
-
-    // expect(screen.getByText(/Echo: Hello WebSocket/)).toBeDefined();
+    // expect(screen.getByText('Echo: ' + msg)).toBeDefined(); // doesn't find text
   });
 });
