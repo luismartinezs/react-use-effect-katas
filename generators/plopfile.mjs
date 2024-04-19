@@ -52,12 +52,22 @@ export default function plopGenerator(plop) {
       {
         type: "add",
         path: "../src/katas/{{pascalCase name}}/index.ts",
-        templateFile: "templates/component/index.ts.hbs",
+        templateFile: "templates/kata/index.ts.hbs",
       },
       {
         type: "add",
-        path: "../src/katas/{{pascalCase name}}/{{pascalCase name}}.tsx",
-        templateFile: "templates/component/component.tsx.hbs",
+        path: "../src/katas/{{pascalCase name}}/kata.tsx",
+        templateFile: "templates/kata/kata.tsx.hbs",
+      },
+      {
+        type: "add",
+        path: "../src/katas/{{pascalCase name}}/start.tsx",
+        templateFile: "templates/kata/start.tsx.hbs",
+      },
+      {
+        type: "add",
+        path: "../src/katas/{{pascalCase name}}/finish.tsx",
+        templateFile: "templates/kata/finish.tsx.hbs",
       },
       {
         type: 'append',
