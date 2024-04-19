@@ -42,12 +42,12 @@ const DependencyChangeDetector = (): React.JSX.Element => {
   return (
       <div>
           <h1>Change Detector</h1>
-          <DependencyLogger propA={propA} propB={propB} propC={propC} />
           <div className="flex gap-2 mt-2">
               <button className="button" onClick={() => setPropA(propA + '+')}>Change Prop A</button>
               <button className="button" onClick={() => setPropB(propB + 1)}>Change Prop B</button>
               <button className="button" onClick={() => setPropC(!propC)}>Change Prop C</button>
           </div>
+          <DependencyLogger propA={propA} propB={propB} propC={propC} />
       </div>
   );
 };
