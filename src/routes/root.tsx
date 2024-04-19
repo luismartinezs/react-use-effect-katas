@@ -12,6 +12,7 @@ const routes = [
     label: 'Subscribe Unsubscribe',
   },
   // new component link here
+  { path: 'test', label: 'Test' },
   { path: 'planetary-data-fetcher', label: 'Planetary data fetcher' },
   { path: 'dependency-change-detector', label: 'Dependency change detector' },
   { path: 'web-socket-chat-client', label: 'Web socket chat client' },

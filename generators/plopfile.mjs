@@ -70,6 +70,10 @@ export default function plopGenerator(plop) {
         templateFile: "templates/kata/finish.tsx.hbs",
       },
       {
+        type: "add",
+        path: "../src/katas/{{pascalCase name}}/README.md",
+      },
+      {
         type: 'append',
         path: '../src/main.tsx',
         pattern: /(\/\/ new component import here)/gi,
