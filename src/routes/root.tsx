@@ -8,10 +8,10 @@ const routes = [
     label: 'Home',
   },
   // new component link here
+  { path: 'websocket-chat', label: 'Websocket chat' },
   { path: 'sub-unsub', label: 'Sub unsub' },
   { path: 'planetary-data-fetcher', label: 'Planetary data fetcher' },
   { path: 'dependency-change-detector', label: 'Dependency change detector' },
-  { path: 'web-socket-chat-client', label: 'Web socket chat client' },
 ]
 
 export default function Root() {

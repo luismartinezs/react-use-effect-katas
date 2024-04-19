@@ -9,6 +9,7 @@ import App from '@/App'
 import ErrorPage from '@/error-page'
 import Root from '@/routes/root'
 // new component import here
+import WebsocketChat from './katas/WebsocketChat';
 import SubUnsub from './katas/SubUnsub';
 import PlanetaryDataFetcher from './katas/PlanetaryDataFetcher';
 import DependencyChangeDetector from './katas/DependencyChangeDetector';
@@ -25,10 +26,10 @@ const router = createBrowserRouter([
         element: <App />,
       },
       // new component route here
+      { path: 'websocket-chat', element: <WebsocketChat /> },
       { path: 'sub-unsub', element: <SubUnsub /> },
       { path: 'planetary-data-fetcher', element: <PlanetaryDataFetcher /> },
       { path: 'dependency-change-detector', element: <DependencyChangeDetector /> },
-      { path: 'web-socket-chat-client', element: <WebSocketChatClient /> },
     ]
   }
 ])

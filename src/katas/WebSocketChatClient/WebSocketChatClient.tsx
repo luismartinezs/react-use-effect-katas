@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from 'react';
-import { MockWebSocket } from './MockWebSocket';
+import { MockWebSocket } from '../WebsocketChat/MockWebSocket';
 
 const WebSocketChatClient= (): React.JSX.Element => {
     const [messages, setMessages] = useState<string[]>([]);
