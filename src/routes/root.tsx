@@ -29,7 +29,7 @@ export default function Root() {
                 <a href={route.path} className="whitespace-nowrap">
                   {route.label}
                 </a>
-                {idx < routes.length - 1 && <span className="inline-block ml-2">-</span>}
+                {idx < routes.length - 1 && <span className="inline-block ml-2">&#x2022;</span>}
               </li>
             ))}
           </ul>
