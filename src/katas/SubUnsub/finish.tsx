@@ -1,7 +1,7 @@
-import { FC, useEffect, useState } from 'react';
-import { emitter } from './MockEventEmitter';
+import { useEffect, useState } from "react";
+import { emitter } from "./MockEventEmitter";
 
-const SubscribeUnsubscribe: FC = (): JSX.Element => {
+export const SubUnsub = (): React.JSX.Element => {
   const [message, setMessage] = useState<string>('');
 
   useEffect(() => {
@@ -18,10 +18,8 @@ const SubscribeUnsubscribe: FC = (): JSX.Element => {
 
   return (
     <div>
-      <h1>Latest Message</h1>
+      <h2>Latest Message</h2>
       <p>{message}</p>
     </div>
   );
 };
-
-export default SubscribeUnsubscribe

@@ -7,11 +7,8 @@ const routes = [
     path: '/',
     label: 'Home',
   },
-  {
-    path: '/sub-unsub',
-    label: 'Subscribe Unsubscribe',
-  },
   // new component link here
+  { path: 'sub-unsub', label: 'Sub unsub' },
   { path: 'planetary-data-fetcher', label: 'Planetary data fetcher' },
   { path: 'dependency-change-detector', label: 'Dependency change detector' },
   { path: 'web-socket-chat-client', label: 'Web socket chat client' },
