@@ -1,0 +1,15 @@
+.shiny {
+  background: linear-gradient(-45deg, theme('colors.primary.200') 10%, theme('colors.primary.100') 50%, theme('colors.primary.200') 90%);
+  background-size: 400% 400%;
+  animation: shine 50s ease infinite;
+}
+
+/* animate gradient */
+@keyframes shine {
+  0% {
+    background-position: 200%;
+  }
+  100% {
+    background-position: -200%;
+  }
+}
