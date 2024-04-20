@@ -20,7 +20,10 @@ export default function Root() {
     <>
       <SkipToContent mainContentRef={mainContentRef} />
       <header>
-        <h2 className="text-lg font-bold">React useEffect Katas 🥷🏻</h2>
+        <div className="flex gap-2 items-center">
+          <img src="./react-katas-icon.png" alt="React Katas Icon" className="w-8 h-8" />
+          <h2 className="text-lg font-bold">React useEffect Katas 🥷🏻</h2>
+        </div>
         <nav className="pb-2 mb-2 border-b border-sky-500">
           <ul className="flex flex-wrap w-full space-x-2">
             {routes.map((route, idx) => (
