@@ -3,7 +3,7 @@ import Card from "@/components/Card";
 function App() {
   return (
     <div className="flex items-center justify-center p-4">
-      <Card shiny>
+      <Card className="max-w-3xl" shiny>
         <h1 className="text-3xl font-bold">React useEffect Katas</h1>
         <p className="mt-4">
           Welcome to the React useEffect Katas repository! This project is
