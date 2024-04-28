@@ -8,6 +8,7 @@ const routes = [
     label: 'Home',
   },
   // new component link here
+  { path: 'window-size', label: 'Window size' },
   { path: 'websocket-chat', label: 'Websocket chat' },
   { path: 'sub-unsub', label: 'Sub unsub' },
   { path: 'planetary-data-fetcher', label: 'Planetary data fetcher' },

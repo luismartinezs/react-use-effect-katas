@@ -9,6 +9,7 @@ import App from '@/App'
 import ErrorPage from '@/error-page'
 import Root from '@/routes/root'
 // new component import here
+import WindowSize from './katas/WindowSize';
 import WebsocketChat from './katas/WebsocketChat';
 import SubUnsub from './katas/SubUnsub';
 import PlanetaryDataFetcher from './katas/PlanetaryDataFetcher';
@@ -26,6 +27,7 @@ const router = createBrowserRouter([
         element: <App />,
       },
       // new component route here
+      { path: 'window-size', element: <WindowSize /> },
       { path: 'websocket-chat', element: <WebsocketChat /> },
       { path: 'sub-unsub', element: <SubUnsub /> },
       { path: 'planetary-data-fetcher', element: <PlanetaryDataFetcher /> },
