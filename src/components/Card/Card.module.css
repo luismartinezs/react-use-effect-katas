@@ -13,3 +13,13 @@
     background-position: -200%;
   }
 }
+
+.hover {
+  transition: transform 500ms ease-out, box-shadow 500ms ease-out;
+}
+
+.hover:hover {
+  transform: scale(1.01) rotate(-.5deg);
+  box-shadow: 0 10px 15px -3px rgb(14 165 233 / 0.2), 0 4px 6px -2px rgb(14 165 233 / 0.2);
+  transition: transform 200ms ease-in, box-shadow 200ms ease-in;
+}
