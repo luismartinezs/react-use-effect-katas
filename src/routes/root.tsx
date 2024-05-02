@@ -8,6 +8,8 @@ const routes = [
     label: 'Home',
   },
   // new component link here
+  { path: 'complex-value', label: 'Complex value' },
+  { path: 'resize-window', label: 'Resize window' },
   { path: 'window-size', label: 'Window size' },
   { path: 'websocket-chat', label: 'Websocket chat' },
   { path: 'sub-unsub', label: 'Sub unsub' },

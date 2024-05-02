@@ -5,7 +5,7 @@ import Finish from './finish'
 const Kata = (): React.JSX.Element => {
   return (
     <>
-      <h1 className="mb-2">{{ sentenceCase name }}</h1>
+      <h1 className="mb-2">Resize window</h1>
       <CodeToggle
       start={
         <Start />

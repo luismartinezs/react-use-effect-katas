@@ -9,12 +9,13 @@ import App from '@/App'
 import ErrorPage from '@/error-page'
 import Root from '@/routes/root'
 // new component import here
+import ComplexValue from './katas/ComplexValue';
+import ResizeWindow from './katas/ResizeWindow';
 import WindowSize from './katas/WindowSize';
 import WebsocketChat from './katas/WebsocketChat';
 import SubUnsub from './katas/SubUnsub';
 import PlanetaryDataFetcher from './katas/PlanetaryDataFetcher';
 import DependencyChangeDetector from './katas/DependencyChangeDetector';
-import WebSocketChatClient from './katas/WebSocketChatClient';
 
 const router = createBrowserRouter([
   {
@@ -27,6 +28,8 @@ const router = createBrowserRouter([
         element: <App />,
       },
       // new component route here
+      { path: 'complex-value', element: <ComplexValue /> },
+      { path: 'resize-window', element: <ResizeWindow /> },
       { path: 'window-size', element: <WindowSize /> },
       { path: 'websocket-chat', element: <WebsocketChat /> },
       { path: 'sub-unsub', element: <SubUnsub /> },
