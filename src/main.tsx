@@ -9,6 +9,7 @@ import App from '@/App'
 import ErrorPage from '@/error-page'
 import Root from '@/routes/root'
 // new component import here
+import FormSubmission from './katas/FormSubmission';
 import ComplexValue from './katas/ComplexValue';
 import ResizeWindow from './katas/ResizeWindow';
 import WindowSize from './katas/WindowSize';
@@ -28,6 +29,7 @@ const router = createBrowserRouter([
         element: <App />,
       },
       // new component route here
+      { path: 'form-submission', element: <FormSubmission /> },
       { path: 'complex-value', element: <ComplexValue /> },
       { path: 'resize-window', element: <ResizeWindow /> },
       { path: 'window-size', element: <WindowSize /> },

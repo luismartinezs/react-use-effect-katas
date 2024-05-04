@@ -8,6 +8,7 @@ const routes = [
     label: 'Home',
   },
   // new component link here
+  { path: 'form-submission', label: 'Form submission' },
   { path: 'complex-value', label: 'Complex value' },
   { path: 'resize-window', label: 'Resize window' },
   { path: 'window-size', label: 'Window size' },
