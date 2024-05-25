@@ -11,8 +11,10 @@
 - [x] setup routing
 - [x] config tailwind
 - [x] setup plop for generating routes
-- [ ] start adding katas
-
+- [x] start adding katas
+- [ ] Better landing
+- [ ] Each kata shows also the README file next to it
+- [ ] Better navigation (toggleable side bar)
 
 ## useEffect hook overview
 
