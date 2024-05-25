@@ -16,6 +16,10 @@
 - [ ] Each kata shows also the README file next to it
 - [ ] Better navigation (toggleable side bar)
 
+Post MVP
+
+- [ ] Able to edit code and see output in browser itself (possibly use 3rd party tool)
+
 ## useEffect hook overview
 
 Here's a structured outline of the key aspects, features, use cases, and important considerations (like potential pitfalls or specific scenarios when not to use) of the `useEffect` hook based on the documentation provided:
